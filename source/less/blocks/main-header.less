@@ -21,20 +21,17 @@
 .main-header__center {
   box-sizing: border-box;
   width: 50%;
-  padding-right: 51px;
+  padding-right: 43px;
+  padding-bottom: 11px;
   outline: 1px solid red;
   text-align: right;
 }
 
 .main-header__right {
   width: 25%;
+  padding-bottom: 9px;
   text-align: right;
   outline: 1px solid red;
-}
-
-.main-header__center,
-.main-header__right {
-  padding-bottom: 11px;
 }
 
 .main-header__logo {
@@ -50,14 +47,17 @@
 .main-header__calc-cost-link {
   font-size: 24px;
   line-height: 24px;
-  letter-spacing: 0.7px;
+  letter-spacing: 1.5px;
   font-variant: small-caps;
+  text-decoration: none;
   color: @light-orange;
+  background: linear-gradient(to bottom, transparent 0%, transparent 87%, @orange 87%, @orange 92%, transparent 92%, transparent 100%);
 }
 
 .main-header__time-work {
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  margin-right: 3px;
   font-size: 16px;
   line-height: 18px;
   color: @contacts-color;
