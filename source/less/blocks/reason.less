@@ -1,0 +1,55 @@
+.reason {
+  margin-bottom: 29px;
+  color: @medium-gray;
+}
+
+.reason__tittle {
+  .mar-pad-reset();
+  margin-bottom: 18px;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+
+.reason__list {
+  .list-reset();
+}
+
+.reason__item {
+  position: relative;
+  padding-left: 89px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  line-height: 17px;
+
+  background-color: bisque;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    outline: 1px solid red;
+  }
+
+  &--layer::after {
+    top: 0;
+    width: 57px;
+    height: 53px;
+    background-image: url("../img/lamin-logo-1.png");
+  }
+
+  &--tree::after {
+    top: 4px;
+    width: 57px;
+    height: 59px;
+    background-image: url("../img/lamin-logo-2.png");
+  }
+}

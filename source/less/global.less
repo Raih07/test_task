@@ -1,0 +1,33 @@
+body {
+  .mar-pad-reset();
+  min-width: @width-body + 40px;
+  padding-bottom: 94px;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: @font-weight;
+  font-family: @font-fam;
+  color: @medium-gray;
+  background-color: @bg-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  .set-container(@width-body);
+  padding-left: 20px;
+  padding-right: 20px;
+}

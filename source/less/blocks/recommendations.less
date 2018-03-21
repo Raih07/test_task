@@ -1,0 +1,40 @@
+.recommendations {
+  box-sizing: border-box;
+  width: 241px;
+  padding-left: 24px;
+  padding-right: 23px;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.recommendations__tittle {
+  .mar-pad-reset();
+  margin-bottom: 19px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: @dark-gray;
+}
+
+.recommendations__list {
+  .list-reset();
+}
+
+.recommendations__item {
+  margin-bottom: 10px;
+}
+
+.recommendations__link {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: @light-gray;
+  background: linear-gradient(to bottom, transparent 0%, transparent 93%, @light-gray 93%, @light-gray 100%);
+
+  &:hover {
+    color: @orange;
+    background: linear-gradient(to bottom, transparent 0%, transparent 93%, @orange 93%, @orange 100%);
+  }
+}

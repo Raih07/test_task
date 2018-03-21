@@ -1,0 +1,97 @@
+.post {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 34px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 31px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.post__author {
+  margin: 0;
+  margin-bottom: 1px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.post__description {
+  margin-bottom: 9px;
+  color: @light-gray;
+  line-height: 17px;
+  letter-spacing: -0.1px;
+}
+
+.post__date,
+.post__contract {
+  margin: 0;
+}
+
+.post__contract-number {
+  letter-spacing: 0.2px;
+}
+
+.post__rate {
+  margin-bottom: 1px;
+  font-size: 0;
+}
+
+.post__star {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  margin-right: 1.5px;
+  background: url("../img/star-icon.png") no-repeat center;
+  background-size: 14px 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.post__body {
+  margin-bottom: 33px;
+}
+
+.post__text {
+  margin: 0;
+  margin-bottom: 11px;
+  line-height: 17px;
+  letter-spacing: 0.1px;
+}
+
+.post__all-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-left: 18px;
+  border: none;
+  border-bottom: 1px dashed @orange;
+  font: inherit;
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: @orange;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: 20%;
+    width: 13px;
+    height: 13px;
+    background: url("../img/post-all-icon.png") no-repeat center;
+    background-size: 13px 13px;
+  }
+}
+
+.post__btn {
+  padding-top: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 8px;
+  margin-bottom: 6px;
+}

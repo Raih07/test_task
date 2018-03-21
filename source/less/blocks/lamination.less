@@ -1,0 +1,53 @@
+.lamination {
+  color: @medium-gray;
+}
+
+.lamination__tittle {
+  .mar-pad-reset();
+  margin-bottom: 18px;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+
+.lamination__list {
+  .list-reset();
+  counter-reset: count;
+}
+
+.lamination__item {
+  position: relative;
+  padding-left: 49px;
+  margin-bottom: 10px;
+  letter-spacing: -0.1px;
+  line-height: 17px;
+
+  background-color: bisque;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: counter(count);
+    position: absolute;
+    left: -2px;
+    top: 52%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #383838;
+    font-size: 19px;
+    line-height: 30px;
+    text-indent: 2px;
+    border: 2px solid #383838;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-52%);
+    counter-increment: count;
+
+  }
+}
