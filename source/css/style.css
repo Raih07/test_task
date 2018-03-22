@@ -564,7 +564,7 @@ img {
   width: 250px;
 }
 .main-nav__item:nth-child(3) a {
-  padding: 14px 15px 13px;
+  padding: 15px 15px 12px;
   margin-left: 4px;
 }
 .main-nav__item:nth-child(4) {
@@ -687,7 +687,7 @@ img {
 }
 .catalog-item__tittle {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
@@ -702,7 +702,7 @@ img {
 }
 .catalog-item__picture {
   width: 308px;
-  padding-top: 2px;
+  padding-top: 1px;
   text-align: center;
   outline: 1px solid red;
 }
@@ -715,7 +715,6 @@ img {
 }
 .catalog-item__description {
   width: 476px;
-  padding-top: 1px;
 }
 .catalog-item__description-list {
   margin: 0;
@@ -858,13 +857,13 @@ img {
   outline: 1px solid red;
 }
 .reason__item--layer::after {
-  top: -1px;
+  top: -2%;
   width: 57px;
   height: 53px;
   background-image: url("../img/lamin-logo-1.png");
 }
 .reason__item--tree::after {
-  top: 4px;
+  top: 6%;
   width: 57px;
   height: 59px;
   background-image: url("../img/lamin-logo-2.png");
@@ -931,7 +930,7 @@ img {
   margin-bottom: 17px;
 }
 .reviews__tittle {
-  max-width: 640px;
+  max-width: 580px;
   margin: 0;
   margin-right: auto;
   font-size: 26px;
@@ -939,6 +938,7 @@ img {
   font-weight: 400;
 }
 .reviews__all-reviews-link {
+  max-width: 280px;
   font-size: 16px;
   text-decoration: none;
   line-height: 21px;
@@ -1012,6 +1012,7 @@ img {
   line-height: 18px;
   font-size: 16px;
   color: #eb5825;
+  background-color: transparent;
   cursor: pointer;
 }
 .post__all-text-btn::before {

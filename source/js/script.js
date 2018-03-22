@@ -5,20 +5,31 @@ if (color_list) {
   color_list.addEventListener('click', selectColor);
 }
 
+/***функция выобра цвета***/
+
 function selectColor(event) {
-  var color_item = event.target.closest('.catalog-item__color-item');
-  if (color_item && color_list.contains(color_item)) {
-    deselectAllColor(this);
-    color_item.classList.add('catalog-item__color-item--active');
-    //showImage(color_item.dataset.src);
+  var target = event.target;
+
+  while (target != this) {
+    if (target.classList.contains('catalog-item__color-item')) {
+      deselectAllColor(this);
+      target.classList.add('catalog-item__color-item--active');
+    //showImage(target.dataset.src);
+      return;
+    }
+    target = target.parentNode;
   }
 }
+
+/***функция удаления всех выбранных цветов***/
 
 function deselectAllColor(items) {
   for (var i = 0; i < items.children.length; i++) {
     items.children[i].classList.remove('catalog-item__color-item--active');
   }
 }
+
+/***ф-я переключения изображения**/
 
 function showImage(href) {
   image_catalog.src = href;
