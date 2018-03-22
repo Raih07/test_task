@@ -472,7 +472,6 @@ img {
 }
 .main-header__left {
   width: 25%;
-  outline: 1px solid red;
 }
 .main-header__center {
   -webkit-box-sizing: border-box;
@@ -480,14 +479,12 @@ img {
   width: 50%;
   padding-right: 43px;
   padding-bottom: 11px;
-  outline: 1px solid red;
   text-align: right;
 }
 .main-header__right {
   width: 25%;
   padding-bottom: 9px;
   text-align: right;
-  outline: 1px solid red;
 }
 .main-header__logo {
   display: block;
@@ -704,7 +701,6 @@ img {
   width: 308px;
   padding-top: 1px;
   text-align: center;
-  outline: 1px solid red;
 }
 .catalog-item__name {
   margin: 0;
@@ -843,7 +839,6 @@ img {
   padding-left: 89px;
   margin-bottom: 20px;
   line-height: 17px;
-  background-color: bisque;
 }
 .reason__item:last-child {
   margin-bottom: 0;
@@ -854,7 +849,6 @@ img {
   left: -3px;
   background-position: center;
   background-repeat: no-repeat;
-  outline: 1px solid red;
 }
 .reason__item--layer::after {
   top: -2%;
@@ -890,7 +884,6 @@ img {
   padding-left: 49px;
   margin-bottom: 10px;
   line-height: 17px;
-  background-color: bisque;
 }
 .lamination__item:last-child {
   margin-bottom: 0;
